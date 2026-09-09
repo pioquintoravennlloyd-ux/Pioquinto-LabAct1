@@ -1,4 +1,3 @@
-// Select all required HTML elements using document.querySelector()
 
 const pageContainer = document.querySelector("#pageContainer");
 const mainHeading = document.querySelector("#mainHeading");
@@ -16,19 +15,11 @@ const resetButton =
 const messageArea =
     document.querySelector("#messageArea");
 
-
-// Original page values
-
 const originalHeading =
     "Welcome to My Event-Driven Webpage!";
 
 const originalBackgroundColor =
     "#f4f4f4";
-
-
-// =====================================
-// EVENT HANDLER: Greeting Button
-// =====================================
 
 function handleGreetingClick() {
 
@@ -61,10 +52,6 @@ function handleGreetingClick() {
 }
 
 
-// =====================================
-// EVENT HANDLER: Background Button
-// =====================================
-
 function handleBackgroundClick() {
 
     document.body.style.backgroundColor =
@@ -77,11 +64,6 @@ function handleBackgroundClick() {
         "Background color changed."
     );
 }
-
-
-// =====================================
-// EVENT HANDLER: Reset Button
-// =====================================
 
 function handleResetClick() {
 
@@ -100,10 +82,6 @@ function handleResetClick() {
     );
 }
 
-
-// =====================================
-// EVENT HANDLER: Input Event
-// =====================================
 
 function handleNameInput() {
 
@@ -125,10 +103,6 @@ function handleNameInput() {
     );
 }
 
-
-// =====================================
-// EVENT HANDLER: Mouseover
-// =====================================
 
 function handleGreetingMouseover() {
 
@@ -153,53 +127,25 @@ function handleResetMouseover() {
     );
 }
 
-
-// =====================================
-// EVENT SOURCES AND EVENT LISTENERS
-// =====================================
-
-// Event Source: greetingButton
-// Event: click
-// Listener: addEventListener()
-// Handler: handleGreetingClick
-
 greetingButton.addEventListener(
     "click",
     handleGreetingClick
 );
-
-
-// Event Source: backgroundButton
-// Event: click
-// Handler: handleBackgroundClick
 
 backgroundButton.addEventListener(
     "click",
     handleBackgroundClick
 );
 
-
-// Event Source: resetButton
-// Event: click
-// Handler: handleResetClick
-
 resetButton.addEventListener(
     "click",
     handleResetClick
 );
 
-
-// Event Source: nameInput
-// Event: input
-// Handler: handleNameInput
-
 nameInput.addEventListener(
     "input",
     handleNameInput
 );
-
-
-// Mouseover Events
 
 greetingButton.addEventListener(
     "mouseover",
@@ -215,9 +161,6 @@ resetButton.addEventListener(
     "mouseover",
     handleResetMouseover
 );
-
-
-// Debugging statement
 
 console.log(
     "Basic Event-Driven Webpage loaded successfully."
