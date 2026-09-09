@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Event-Driven Webpage</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div id="pageContainer">
+
+        <div class="school-info">
+            <h2>UNIVERSIDAD DE DAGUPAN</h2>
+            <p>SCHOOL OF INFORMATION TECHNOLOGY EDUCATION</p>
+            <p>ITP10 | EVENT-DRIVEN PROGRAMMING</p>
+            <p>PRELIM | LABORATORY ACTIVITY 1</p>
+        </div>
+
+        <div class="student-info">
+            <p><strong>Name:</strong> Ravenn Lloyd Pioquinto</p>
+            <p><strong>Year, Course & Block:</strong> 31-ITE-04</p>
+            <p><strong>Subject:</strong> ITP10 - Event-Driven Programming</p>
+            <p><strong>Date:</strong> September 9, 2026</p>
+        </div>
+
+        <hr>
+
+        <h1 id="mainHeading">
+            Welcome to My Event-Driven Webpage!
+        </h1>
+
+        <div class="form-group">
+
+            <label for="nameInput">
+                Enter your name:
+            </label>
+
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Type your name here"
+                autocomplete="off"
+            >
+
+        </div>
+
+        <div class="button-group">
+
+            <button id="greetingButton">
+                Display Greeting
+            </button>
+
+            <button id="backgroundButton">
+                Change Background
+            </button>
+
+            <button id="resetButton">
+                Reset
+            </button>
+
+        </div>
+
+        <p id="messageArea"></p>
+
+    </div>
+
+</body>
+</html>
